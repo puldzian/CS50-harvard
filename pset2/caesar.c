@@ -19,7 +19,7 @@ int main(int argc, char* argv[]){
     
     printf("plaintext:  ");
     string plain = get_string();
-   printf("cyphertext: ");
+    printf("ciphertext: ");
     
     // Tutaj wchodzi pętla przez plain
     for (int i = 0, n = strlen(plain); i < n; i++)
@@ -32,7 +32,7 @@ int main(int argc, char* argv[]){
             printf("%c", plain[i]);
         }
     }
-    //printf("\n");
+    printf("\n");
     return 0;
 }
 
