@@ -21,17 +21,21 @@
 
 int main(int argc, string argv[])
 {
-    // TODO: comment me
+    // TODO: sprawdź czy są argumenty
+    // jeśli nie są dwa albo trzy
+    // powiedz, że błąd
     if (argc != 2 && argc != 3)
     {
         printf("Usage: ./generate n [s]\n");
         return 1;
     }
 
-    // TODO: comment me
+    // TODO: liczba liczb do wylosowania jako int
+    // z pierwszego argumentu
     int n = atoi(argv[1]);
 
-    // TODO: comment me
+    // TODO: jesli jest seed to dawaj go
+    // do właściwej komendy srand48
     if (argc == 3)
     {
         srand48((long) atoi(argv[2]));
@@ -41,7 +45,7 @@ int main(int argc, string argv[])
         srand48((long) time(NULL));
     }
 
-    // TODO: comment me
+    // TODO: no i tu wywala te liczby
     for (int i = 0; i < n; i++)
     {
         printf("%i\n", (int) (drand48() * LIMIT));
